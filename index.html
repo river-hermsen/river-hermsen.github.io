@@ -14,7 +14,7 @@
 <body>
     <nav>
         <div>
-            <span class="outer-marked">RIVER HERMSEN <span class="marked-1-7rem"></span>
+            <span class="outer-marked outer-marked-nav">RIVER HERMSEN <span class="marked-1-7rem"></span>
             </span>
         </div>
     </nav>
@@ -22,9 +22,7 @@
 
         <header>
             <div class="header-text-container">
-                <h1>Hi! I'm River <br>
-                    I'm a web developer<span class="theme-color">.</span>
-                </h1>
+                <h1 id="typed-strings"></h1>
             </div>
             <div class="header-learn-more">
                 <a href="#about">
@@ -37,17 +35,50 @@
 
         <section id="about">
             <div class="section-header">
-                <h1 class="outer-marked">About me<span class="marked-h1"></span></h1>
+                <h1 class="outer-marked">Over mij.<span class="marked-h1"></span></h1>
             </div>
-            <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                in culpa qui officia deserunt mollit anim id est laborum.
-
+            <div class="section-content">
+                <p>
+                    Ik ben River Hermsen en ik ben 17 jaar oud. Ik woon in Amsterdam-oost.
+<!--                    Mijn hobby's zijn sporten en gamen.-->
+                    Ik heb een HAVO-diploma van het MLA. Voornamelijk daar heb ik ook leren programmeren in de lessen van informatica.
+                    Ook had ik naast de lessen informatica de ICT in de wolken module gekozen.
+                    In deze module, die 1 keer per week was, deed ik projecten voor bedrijven zoals KLM en IBM.
+                    Bij ICT in de wolken heb ik veel geleerd over programmeren maar ook werken in een team verband.
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-header">
+                <h1 class="outer-marked">Contact.<span class="marked-h1"></span></h1>
+            </div>
+            <div class="section-content" >
+                <div class="section-side">
+                    <div class="section-side-item">
+                        <img src="assets/icons/call-answer.svg" class="icon">
+                        <span>+31 6 12345678</span>
+                    </div>
+                    <div class="section-side-item">
+                        <img src="assets/icons/close-envelope.svg" class="icon">
+                        <span>riverhermsen@hotmail.nl</span>
+                    </div>
+                    <div class="section-side-item">
+                        <img src="assets/icons/facebook-placeholder-for-locate-places-on-maps.svg" class="icon">
+                        <span>Seinwachterstraat, Amsterdam</span>
+                    </div>
+                </div>
+                <div class="section-map">
+                    <div id="map"></div>
+                </div>
             </div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="scripts/app.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpwMe7tW66lpnDogJ3QkE_0T3muucADnY&callback=initMap">
+    </script>
+
 </body>
 
 </html>
